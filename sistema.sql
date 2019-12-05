@@ -5,13 +5,13 @@
  Source Server Type    : MariaDB
  Source Server Version : 100406
  Source Host           : localhost:3306
- Source Schema         : sistemas
+ Source Schema         : sistema
 
  Target Server Type    : MariaDB
  Target Server Version : 100406
  File Encoding         : 65001
 
- Date: 19/11/2019 21:04:50
+ Date: 05/12/2019 03:20:12
 */
 
 SET NAMES utf8mb4;
@@ -85,6 +85,8 @@ INSERT INTO `sistema_menu_area` VALUES (17, 1);
 INSERT INTO `sistema_menu_area` VALUES (16, 1);
 INSERT INTO `sistema_menu_area` VALUES (29, 1);
 INSERT INTO `sistema_menu_area` VALUES (30, 1);
+INSERT INTO `sistema_menu_area` VALUES (31, 1);
+INSERT INTO `sistema_menu_area` VALUES (32, 1);
 
 -- ----------------------------
 -- Table structure for sistema_menues
@@ -100,7 +102,7 @@ CREATE TABLE `sistema_menues`  (
   `css` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci NULL DEFAULT '0',
   `activo` tinyint(1) NULL DEFAULT 0,
   PRIMARY KEY (`idmenu`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 31 CHARACTER SET = utf8 COLLATE = utf8_spanish_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = utf8 COLLATE = utf8_spanish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sistema_menues
@@ -118,8 +120,6 @@ INSERT INTO `sistema_menues` VALUES (10, '/permisos', 2, 'Permisos', 7, NULL, ''
 INSERT INTO `sistema_menues` VALUES (11, '/sistema/menu', 4, 'Menú', 7, NULL, '', 1);
 INSERT INTO `sistema_menues` VALUES (12, '', 3, 'Legajo electrónico', 0, NULL, 'fa fa-folder fa-fw', 1);
 INSERT INTO `sistema_menues` VALUES (13, '/legajo/personal', 2, 'Personal Fmed', 12, NULL, '', 1);
-INSERT INTO `sistema_menues` VALUES (14, '', 0, 'Seguimiento Inscripción', 0, NULL, 'fa fa-folder fa-fw', 1);
-INSERT INTO `sistema_menues` VALUES (15, '', 0, 'Creación de Actividades', 0, NULL, 'fa fa-university', 1);
 INSERT INTO `sistema_menues` VALUES (20, '/publico/situacionimpositiva', 4, 'Situación impositiva', 4, NULL, '', 1);
 INSERT INTO `sistema_menues` VALUES (21, '/publico/paises', 0, 'Países', 4, NULL, NULL, 1);
 INSERT INTO `sistema_menues` VALUES (22, '/actividad/modulos', 3, 'Módulos', 15, NULL, '', 1);
@@ -129,6 +129,8 @@ INSERT INTO `sistema_menues` VALUES (27, '/seguimiento/inscripciones', 0, 'Inscr
 INSERT INTO `sistema_menues` VALUES (28, '/publico/tipodocumento', 0, 'Tipos de documento', 4, NULL, NULL, 1);
 INSERT INTO `sistema_menues` VALUES (29, '', 0, 'Certificados', 0, NULL, 'fa fa-certificate', 1);
 INSERT INTO `sistema_menues` VALUES (30, '/certificados', 0, 'Listado de certificados', 29, NULL, '', 1);
+INSERT INTO `sistema_menues` VALUES (31, '', 1, 'Productos', 0, NULL, 'fa fa-product-hunt', 1);
+INSERT INTO `sistema_menues` VALUES (32, '/productos', 1, 'Listado de productos', 31, NULL, NULL, 1);
 
 -- ----------------------------
 -- Table structure for sistema_paquetes
@@ -301,6 +303,6 @@ CREATE TABLE `sistema_usuarios`  (
 -- ----------------------------
 -- Records of sistema_usuarios
 -- ----------------------------
-INSERT INTO `sistema_usuarios` VALUES (1, 'admin', 'Laura', 'Hernandez', 'lalalejandrahc@gmail.com', '1234', '2019-09-17 17:27:10', 'current_timestamp()', 1, '2019-09-17 16:05:57', 0, 1, 1);
+INSERT INTO `sistema_usuarios` VALUES (1, 'admin', 'Laura', 'Hernandez', 'lalalejandrahc@gmail.com', '1234', '2019-11-21 21:28:36', 'current_timestamp()', 1, '2019-09-17 16:05:57', 0, 1, 1);
 
 SET FOREIGN_KEY_CHECKS = 1;
