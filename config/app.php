@@ -164,11 +164,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-        /*
-         * Package Service Providers...
-         */
-		Adldap\Laravel\AdldapAuthServiceProvider::class,
-
+    
         /*
          * Application Service Providers...
          */
@@ -192,7 +188,6 @@ return [
     */
 
     'aliases' => [
-		'Adldap' => Adldap\Laravel\Facades\Adldap::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
