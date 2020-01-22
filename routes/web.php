@@ -15,6 +15,9 @@
 {
 
 Route::get('/', 'ControladorHome@index');
+Route::get('/legajo', 'ControladorLegajo@index');
+
+
 Route::get('/home', 'ControladorHome@index');
 
 /* --------------------------------------------- */
