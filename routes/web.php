@@ -84,6 +84,10 @@ Route::get('/sistema/menu/{id}', 'ControladorMenu@editar');
 Route::post('/sistema/menu/{id}', 'ControladorMenu@guardar');
 Route::get('/sistema/menu/{id}', 'ControladorMenu@editar');
 
+/* --------------------------------------------- */
+/* CONTROLADOR PRODUCTO                          */
+/* --------------------------------------------- */
 
+Route::get('/producto/nuevo', 'ControladorProducto@nuevo');
 });
 
