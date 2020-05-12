@@ -36,10 +36,10 @@
 	            dataType: "json",
 	            success: function (data) {
 	                if (data.err = "0") {
-	                  if(window.location.pathname == "/login")
-	                    location.href ="/";
+	                  if(window.location.pathname == "/admin/login")
+	                    location.href ="/admin";
 	                  else
-	                    location.href ="/";
+	                    location.href ="/admin";
                       //location.reload();
 	                } else {
 	                    alert("Error al cambiar el grupo");
@@ -58,6 +58,9 @@
       </button>
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item my-2 my-lg-0 mr-lg-2">
+          <a href="/">moveon.fit</a>
+        </li>
         <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
@@ -199,7 +202,7 @@
           <div class="modal-body">Seleccciona "Cerrar sesi&oacute;n" si deseas terminar la sesi&oacute;n actual.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-            <a class="btn btn-primary" href="/logout">Cerrar sesi&oacute;n</a>
+            <a class="btn btn-primary" href="/admin/logout">Cerrar sesi&oacute;n</a>
           </div>
         </div>
       </div>
